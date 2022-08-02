@@ -1,0 +1,267 @@
+.header-top
+    display: flex
+    justify-content: space-between
+    padding-top: 25px
+    padding-bottom: 30px
+    align-items: center
+    .logo
+        max-width: 81px
+        margin-right: 27px
+    &__text
+        max-width: 122px
+        opacity: 0.6
+        margin-right: 63px
+        font-size: 14px
+    &__adress
+        margin-right: 79px
+        &-txt
+            opacity: 0.6
+            font-size: 12px
+            margin-bottom: 6px
+        &-map
+            font-size: 14px
+            display: flex
+            margin-right: 8px
+            svg
+                margin-right: 8px
+    &__social
+        display: flex
+        margin-right: 42px
+        &-txt
+            font-size: 12px
+            margin-right: 12px
+            max-width: 125px
+        .tg
+            margin-right: 7px
+    &__tell
+        margin-right: 43px
+        &-mail
+            opacity: 0.6
+            font-size: 12px
+            text-align: center
+        a
+            font-size: 18px
+            line-height: 140%
+            color: #323232
+            font-weight: 500
+    &__phone
+        display: flex
+        align-items: end
+        flex-direction: column
+        a
+            color: #23A2D9
+            text-transform: uppercase
+            font-size: 12px
+            line-height: 140%
+            border-bottom: 1px dashed #23A2D9
+            margin-bottom: 6px
+            svg
+                margin-right: 5px
+        &-txt
+            opacity: 0.6
+            font-size: 11px
+
+
+.header-bottom
+    padding-left: 35px
+    padding-right: 35px
+    background: white 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    &__social
+        display: flex
+        align-items: center
+        gap: 8px
+.header__menu
+    display: flex
+    align-items: center
+    justify-content: space-between
+    ul
+        display: flex
+        align-items: center
+        justify-content: space-between
+        gap: 43px
+        a
+            font-weight: 400
+            font-size: 16px
+            line-height: 140%
+            color: $black
+            height: 57px
+            display: flex
+            align-items: center
+            
+.main-menu-btn-icon
+    display: none
+#menu-bar
+	display: none
+.header__menu label
+    font-size: 20px
+    color: #333
+    cursor: pointer
+    display: none
+header .navbar ul li
+    position: relative
+header .navbar ul li ul
+    position: absolute
+    left: 0
+    top: 57px
+    width: 200px
+    z-index: 3
+    background: white
+    display: none
+header .navbar ul li ul li
+    width: 100%
+    border-top: 1px solid #08B84E
+header .navbar ul li ul li a
+    padding-left: 5px
+    font-weight: 400
+    font-size: 16px
+    line-height: 140%
+    color: $black
+    
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul
+    display: initial
+.main-menu-btn-icon,
+.main-menu-btn-icon:before,
+.main-menu-btn-icon:after
+    position: absolute
+    top: 23px
+    right: 15px
+    height: 4px
+    width: 30px
+    background: #23436A
+    -webkit-transition: all 0.25s
+    transition: all 0.25s
+.main-menu-btn-icon:before
+    content: ''
+    top: -10px
+    left: 0
+.main-menu-btn-icon:after
+    content: ''
+    top: 10px
+    left: 0
+#menu-bar:checked ~ .main-menu-btn-icon
+    height: 0
+    background: inherit
+    -webkit-transition: all 0.5s
+    transition: all 0.5s
+#menu-bar:checked ~ .main-menu-btn-icon:before
+    transform: rotate(-45deg)
+    top: 0
+    -webkit-transition: all 0.5s
+    transition: all 0.5s
+#menu-bar:checked ~ .main-menu-btn-icon:after
+    top: 0
+    transform: rotate(45deg)
+    -webkit-transition: all 0.5s
+    transition: all 0.5s
+.header__menu .navbar ul li .drop:after
+    content: ''
+    background-image: url("../img/image 97.png");
+    display: block
+    position: absolute
+    right: -15px
+    top: 39%
+    width: 10px
+    height: 14px
+.header__menu .navbar ul li ul li .drop:after
+    content: ''
+    display: block
+    position: absolute
+    right: 20px
+    top: 42%
+    width: 0
+    height: 0
+    border-left: 6px solid transparent
+    border-right: 6px solid transparent
+    border-top: 10px solid #333
+    border-bottom: 0px solid transparent
+.header__menu .navbar ul li ul li:focus-within > .drop:after,
+.header__menu .navbar ul li ul li:active > .drop:after,
+.header__menu .navbar ul li ul li:target > .drop:after,
+.header__menu .navbar ul li ul li:hover > .drop:after
+    content: ''
+    display: block
+    position: absolute
+    right: 20px
+    top: 42%
+    width: 0
+    height: 0
+    border-left: 6px solid transparent
+    border-right: 6px solid transparent
+    border-top: 10px solid white
+    border-bottom: 0px solid transparent
+@media(max-width: 1023px)
+	.header__menu label
+        display: initial
+	.header__menu .navbar
+        max-width: 20%
+        border-radius: 0 20px 20px 0
+        max-height: 650px
+        overflow: auto
+        position: absolute
+        top: 31%
+        left: 0
+        right: 0
+        background: white
+        border-top: 1px solid rgba(0,0,0,.1)
+        display: none
+	.header__menu .navbar ul li
+        width: 100%
+	.header__menu .navbar ul li ul
+        position: relative
+        width: 100%
+	.header__menu .navbar ul li ul li
+        background: white
+	.header__menu .navbar ul li ul li a
+        padding-left: 45px
+	.header__menu .navbar ul li ul li ul
+        width: 100%
+        left: 0
+	#menu-bar:checked ~ .navbar
+        display: initial
+	.header__menu .navbar ul li .drop:after
+        display: block
+        position: absolute
+        right: 20px
+        top: 33%
+	.header__menu .navbar ul li ul li .drop:after
+        content: ''
+        display: block
+        position: absolute
+        right: 20px
+        top: 33%
+        width: 0
+        height: 0
+        border-left: 10px solid transparent
+        border-right: 10px solid transparent
+        border-top: 15px solid #333
+        border-bottom: 0px solid transparent
+	.header__menu .navbar ul li:focus-within > .drop:after,
+	.header__menu .navbar ul li:active > .drop:after,
+	.header__menu .navbar ul li:target > .drop:after,
+	.header__menu .navbar ul li:hover > .drop:after
+        content: ''
+        display: block
+        position: absolute
+        right: 20px
+        top: 7%
+	.header__menu .navbar ul li ul li:focus-within > .drop:after,
+	.header__menu .navbar ul li ul li:active > .drop:after,
+	.header__menu .navbar ul li ul li:target > .drop:after,
+	.header__menu .navbar ul li ul li:hover > .drop:after
+        content: ''
+        display: block
+        position: absolute
+        right: 20px
+        top: 10%
+        width: 0
+        height: 0
+        border-left: 10px solid transparent
+        border-right: 10px solid transparent
+        border-top: 15px solid white
+        border-bottom: 0px solid transparent

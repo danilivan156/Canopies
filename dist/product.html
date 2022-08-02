@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title></title>
+</head>
+
+<body>
+  <main class="page-container">
+    <header class="container">
+      <div class="header-top">
+        <a class="logo" href="/">
+          <img src="img/logo.svg" alt="">
+        </a>
+        <div class="header-top__text">Навесы из поликарбоната</div>
+        <div class="header-top__adress">
+          <div class="header-top__adress-txt">Наш адрес в г. Москва:</div>
+          <div class="header-top__adress-map">
+            <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.95499 0C2.67139 0 0 2.59944 0 5.79457C0 9.75982 5.32913 15.581 5.55602 15.8269C5.76914 16.0579 6.14122 16.0575 6.35395 15.8269C6.58084 15.581 11.91 9.75982 11.91 5.79457C11.9099 2.59944 9.23855 0 5.95499 0ZM5.95499 8.70998C4.30293 8.70998 2.95891 7.40213 2.95891 5.79457C2.95891 4.187 4.30296 2.87919 5.95499 2.87919C7.60701 2.87919 8.95103 4.18704 8.95103 5.7946C8.95103 7.40217 7.60701 8.70998 5.95499 8.70998Z" fill="url(#paint0_linear_3_90)" />
+              <defs>
+                <linearGradient id="paint0_linear_3_90" x1="5.95499" y1="0" x2="5.95499" y2="16" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#08B84E" />
+                  <stop offset="1" stop-color="#08B84E" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <p>ул. Потаповский переулок, 5с2</p>
+          </div>
+        </div>
+        <div class="header-top__social">
+          <div class="header-top__social-txt">Пишите нам в чат, отвечаем<b> за 3 минуты</b>
+          </div>
+          <a class="tg" href="#">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.5 25C19.4052 25 25 19.4052 25 12.5C25 5.59479 19.4052 0 12.5 0C5.59479 0 0 5.59479 0 12.5C0 19.4052 5.59479 25 12.5 25ZM5.71979 12.2292L17.7719 7.58229C18.3312 7.38021 18.8198 7.71875 18.6385 8.56458L18.6396 8.56354L16.5875 18.2313C16.4354 18.9167 16.0281 19.0833 15.4583 18.7604L12.3333 16.4573L10.826 17.9094C10.6594 18.076 10.5187 18.2167 10.1958 18.2167L10.4177 15.0365L16.2094 9.80417C16.4615 9.58229 16.1531 9.45729 15.8208 9.67813L8.66354 14.1844L5.57812 13.2219C4.90833 13.0094 4.89375 12.5521 5.71979 12.2292Z" fill="url(#paint0_linear_3_107)" />
+              <defs>
+                <linearGradient id="paint0_linear_3_107" x1="12.5" y1="0" x2="12.5" y2="25" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#34B0E3" />
+                  <stop offset="1" stop-color="#1897C9" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </a>
+          <a href="#">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.5001 0C5.59755 0 0 5.5975 0 12.5C0 19.4025 5.59755 25 12.5001 25C19.4027 25 25.0002 19.4025 25.0002 12.5C25.0002 5.5975 19.4027 0 12.5001 0ZM12.7651 19.7779C12.7649 19.7779 12.7652 19.7779 12.7651 19.7779H12.762C11.5098 19.7773 10.2794 19.4633 9.18664 18.8675L5.22065 19.9076L6.2821 16.0318C5.62731 14.8977 5.28284 13.611 5.28341 12.2929C5.28512 8.16917 8.64133 4.81434 12.7651 4.81434C14.7663 4.8151 16.6448 5.59406 18.0572 7.0076C19.4698 8.42133 20.2473 10.3004 20.2465 12.2988C20.2448 16.4227 16.8882 19.7779 12.7651 19.7779Z" fill="url(#paint0_linear_3_108)" />
+              <path d="M12.7675 6.07764C9.33744 6.07764 6.54791 8.86599 6.54639 12.2935C6.54601 13.468 6.87484 14.6119 7.49721 15.6016L7.64503 15.8368L7.01674 18.1308L9.37024 17.5135L9.59741 17.6482C10.552 18.2147 11.6465 18.5143 12.7623 18.5147H12.7648C16.1921 18.5147 18.9817 15.7262 18.9832 12.2985C18.9838 10.6373 18.3375 9.07561 17.1636 7.90068C15.9896 6.72575 14.4282 6.07821 12.7675 6.07764ZM16.425 14.9661C16.2692 15.4025 15.5225 15.8009 15.1633 15.8547C14.8411 15.9028 14.4337 15.9228 13.9859 15.7807C13.7143 15.6945 13.3662 15.5795 12.92 15.387C11.0449 14.5776 9.82019 12.69 9.72673 12.5653C9.63327 12.4406 8.9634 11.5519 8.9634 10.632C8.9634 9.71228 9.44635 9.26005 9.61763 9.07313C9.7891 8.88602 9.99167 8.83929 10.1162 8.83929C10.2408 8.83929 10.3655 8.84043 10.4744 8.84577C10.5892 8.8515 10.7434 8.8021 10.895 9.16659C11.0508 9.54081 11.4247 10.4605 11.4714 10.554C11.5181 10.6476 11.5492 10.7567 11.487 10.8815C11.4247 11.0062 11.2175 11.2754 11.0197 11.5206C10.9368 11.6234 10.8286 11.715 10.9377 11.9021C11.0466 12.089 11.422 12.7011 11.9776 13.1966C12.6917 13.8333 13.2941 14.0305 13.481 14.1242C13.6677 14.2176 13.7768 14.202 13.8859 14.0774C13.9948 13.9527 14.3532 13.5318 14.4778 13.3446C14.6023 13.1575 14.7271 13.1888 14.8984 13.2512C15.0698 13.3134 15.9888 13.7656 16.1757 13.8591C16.3627 13.9527 16.4872 13.9994 16.5339 14.0774C16.5809 14.1555 16.5809 14.5295 16.425 14.9661Z" fill="#29B53F" />
+              <defs>
+                <linearGradient id="paint0_linear_3_108" x1="12.5001" y1="0" x2="12.5001" y2="25" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#59D265" />
+                  <stop offset="1" stop-color="#29B53F" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </a>
+        </div>
+        <div class="header-top__tell">
+          <div class="header-top__tell-mail">newnaves@yandex.ru</div>
+          <a href="#">+7 (916) 945-35-75</a>
+        </div>
+        <div class="header-top__phone">
+          <a href="#">
+            <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.76448 7.45026L7.50587 6.21444C7.05636 5.77307 6.2922 5.94964 6.11239 6.52339C5.97754 6.92064 5.52803 7.14132 5.12348 7.05303C4.22446 6.83235 3.01079 5.6848 2.78604 4.75794C2.65119 4.36069 2.92089 3.91933 3.32545 3.78694C3.90981 3.61039 4.08961 2.86007 3.6401 2.41871L2.38148 1.18289C2.02188 0.873933 1.48247 0.873933 1.16782 1.18289L0.313753 2.02148C-0.54031 2.90421 0.403654 5.24344 2.51634 7.31785C4.62902 9.39226 7.01141 10.3633 7.91042 9.48053L8.76448 8.64194C9.07916 8.28885 9.07916 7.75921 8.76448 7.45026Z" fill="#1E9CE2" />
+            </svg>Заказать звонок
+          </a>
+          <div class="header-top__phone-txt">Перезвоним за 28 секунд</div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="header__menu">
+          <input type="checkbox" id="menu-bar">
+          <label class="main-menu-btn-icon" for="menu-bar"> </label>
+          <nav class="navbar">
+            <ul>
+              <li>
+                <a href="/">Главная</a>
+              </li>
+              <li>
+                <a class="drop" href="../dist/catalog.html">Каталог</a>
+                <ul>
+                  <li>
+                    <a href="#">Lorem</a>
+                  </li>
+                  <li>
+                    <a href="#">Lorem</a>
+                  </li>
+                  <li>
+                    <a href="#">Lorem</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Новинки</a>
+              </li>
+              <li>
+                <a href="#">О нас</a>
+              </li>
+              <li>
+                <a href="#">Фото</a>
+              </li>
+              <li>
+                <a href="#">Видеогалерея</a>
+              </li>
+              <li>
+                <a href="#">Блог</a>
+              </li>
+              <li>
+                <a href="#">Как заказать</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-bottom__social">
+          <a href="#">
+            <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.4994 12.3213C22.4994 18.3964 17.5745 23.3213 11.4995 23.3213C5.42435 23.3213 0.499512 18.3964 0.499512 12.3213C0.499512 6.24615 5.42435 1.32129 11.4995 1.32129C17.5745 1.32129 22.4994 6.24615 22.4994 12.3213Z" fill="white" stroke="#F0F0F0" />
+              <rect x="4.99976" y="6" width="13" height="13" rx="3" fill="#323232" />
+              <rect x="4.99976" y="6" width="13" height="13" rx="3" fill="url(#paint0_linear_3_119)" />
+              <circle cx="11.4998" cy="12.5" r="3" fill="#DA3434" stroke="#E0E0E0" />
+              <circle cx="15.7498" cy="8.75" r="0.75" fill="#E0E0E0" />
+              <defs>
+                <linearGradient id="paint0_linear_3_119" x1="4.99976" y1="19" x2="17.9998" y2="6" gradientUnits="userSpaceOnUse">
+                  <stop offset="0.114583" stop-color="#E2C944" />
+                  <stop offset="0.515625" stop-color="#DA3434" />
+                  <stop offset="1" stop-color="#E334D2" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </a>
+          <a href="#">
+            <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="11.5" cy="12.3218" r="11" fill="white" stroke="#F0F0F0" />
+              <rect x="4.99951" y="8" width="13" height="9" rx="2" fill="#E94A4A" />
+              <path d="M13.2495 12.067C13.5828 12.2594 13.5828 12.7406 13.2495 12.933L10.9995 14.2321C10.6662 14.4245 10.2495 14.1839 10.2495 13.799L10.2495 11.201C10.2495 10.8161 10.6662 10.5755 10.9995 10.7679L13.2495 12.067Z" fill="white" />
+            </svg>
+          </a>
+          <a href="#">
+            <img src="img/Вк.png" alt="">
+          </a>
+          <a href="#">
+            <img src="img/Тик ток.png" alt="">
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="product">
+      <div class="container">
+        <h1>Навес над террасой из поликарбоната №17</h1>
+        <div class="breadcrumbs">
+          <a href="#">Главная</a>
+          <div class="breadcrumbs-arrow">></div>
+          <a href="#">Каталог</a>
+          <div class="breadcrumbs-arrow">></div>
+          <a href="#">Арочные навесы</a>
+          <div class="breadcrumbs-arrow">></div>
+          <a class="breadcrumbs-active" href="#">Навес над террасой из поликарбоната №17</a>
+        </div>
+        <div class="product__main">
+          <div class="product__left">
+            <div class="product__gallery">
+              <div class="product__gallery-slider">
+                <div class="swiper-container mySwiper-3">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="img/product/image 10.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/product/image 10.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/product/image 10.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/product/image 10.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-container mySwiper-2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/product/image 10.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/product/image 10.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/product/image 10.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/product/image 10.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__project">
+              <img class="product__absolute-1" src="img/product/image 47.png" alt="">
+              <img class="product__absolute-2" src="img/product/image 28.png" alt="">
+              <img class="product__absolute-3" src="img/product/image 17.png" alt="">
+              <img class="product__absolute-4" src="img/product/image 17 (1).png" alt="">
+              <h2>Не можете определиться с видом навеса?</h2>
+              <p>Оставьте заявку на 3D-проект Вашего навеса бесплатно и посмотрите, как он будет выглядеть на Вашем участке</p>
+              <a class="btn" href="#">ЗАказать 3D проект</a>
+            </div>
+          </div>
+          <div class="product__right">
+            <div class="product__zakaz">
+              <div class="product__zakaz-block">
+                <div class="product__price">
+                  <div class="product__price-main">5 500 ₽/м2</div>
+                  <div class="product__price-old">6 200 ₽/м2</div>
+                </div>
+                <p>Ближайший монтаж: <span>03 апреля</span>
+                </p>
+              </div>
+              <a class="btn" href="#">Заказать навес</a>
+            </div>
+            <div class="product__type">
+              <h3>Выберите тип конструкции:</h3>
+              <div class="flex">
+                <div class="check__tab">
+                  <input type="checkbox" id="check-1">
+                  <label for="check-1">
+                    <div class="check__ico">
+                      <img src="img/product/image 15.png" alt="">
+                    </div>
+                    <div class="check__title">Стандарт</div>
+                    <div class="check__subtitle">4 500 ₽/м2</div>
+                  </label>
+                </div>
+                <div class="check__tab">
+                  <input type="checkbox" id="check-2">
+                  <label for="check-2">
+                    <div class="check__ico">
+                      <img src="img/product/image 15.png" alt="">
+                    </div>
+                    <div class="check__title">Престиж</div>
+                    <div class="check__subtitle">5 500 ₽/м2</div>
+                  </label>
+                </div>
+                <div class="check__tab">
+                  <input type="checkbox" id="check-3">
+                  <label for="check-3">
+                    <div class="check__ico">
+                      <img src="img/product/image 15.png" alt="">
+                    </div>
+                    <div class="check__title">Флагман</div>
+                    <div class="check__subtitle">6 500 ₽/м2</div>
+                  </label>
+                </div>
+                <div class="check__tab">
+                  <input type="checkbox" id="check-4">
+                  <label for="check-4">
+                    <div class="check__ico">
+                      <img src="img/product/image 15.png" alt="">
+                    </div>
+                    <div class="check__title">Спецкаркас</div>
+                    <div class="check__subtitle">8 000 ₽/м2</div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="product__construction">
+              <div class="product__construction-left">
+                <h3>Конструкция «Стандарт»</h3>
+                <div class="product__datas">
+                  <div class="product__data">
+                    <div class="product__data-name">Столбы:</div>
+                    <div class="product__data-circle"></div>
+                    <div class="product__data-count">60х60 мм</div>
+                  </div>
+                  <div class="product__data">
+                    <div class="product__data-name">Лаги:</div>
+                    <div class="product__data-circle"></div>
+                    <div class="product__data-count">60х60 мм</div>
+                  </div>
+                  <div class="product__data">
+                    <div class="product__data-name">Фермы:</div>
+                    <div class="product__data-circle"></div>
+                    <div class="product__data-count">25х25 мм</div>
+                  </div>
+                  <div class="product__data">
+                    <div class="product__data-name">Обрешётка:</div>
+                    <div class="product__data-circle"></div>
+                    <div class="product__data-count">25х25 мм</div>
+                  </div>
+                </div>
+                <a href="#">Смотреть все характеристики</a>
+              </div>
+              <div class="product__construction-right">
+                <ul>
+                  <li>Материал и цвет кровли <b>на выбор</b>
+                  </li>
+                  <li>Конструкция <b>любой сложности</b>
+                  </li>
+                  <li>Изготовление <b>2-3 дня</b>
+                  </li>
+                  <li>Окрас в любой цвет по <a href="#">RAL</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="product__images">
+              <div class="product__image">
+                <img class="product__image-img img-1" src="img/2121641585_w640_h640_lobovoe-steklo-scania 1.png" alt="">
+                <img class="product__image-absol1" src="img/image 17.png" alt="">
+                <div class="product__image-ico">
+                  <img src="img/product/image 15.png" alt="">
+                </div>
+                <h4>
+                  <b>Бесплатная</b>
+                  <br>доставка и монтаж
+                </h4>
+              </div>
+              <div class="product__image">
+                <img class="product__image-img img-2" src="img/Silver Shield.H03 1.png" alt="">
+                <img class="product__image-absol2" src="img/image 17 (1).png" alt="">
+                <div class="product__image-ico">
+                  <img src="img/product/image 15.png" alt="">
+                </div>
+                <h4>Расширенная
+                  <br> гарантия <b>до 10 лет</b>
+                </h4>
+              </div>
+              <div class="product__image">
+                <img class="img-3" src="img/image 16.png" alt="">
+                <div class="product__image-ico">
+                  <img src="img/product/image 15.png" alt="">
+                </div>
+                <h4>Изготовим
+                  <br>
+                  <b>любой</b> размер
+                </h4>
+              </div>
+            </div>
+            <div class="product__samples">
+              <div class="flex">
+                <div class="product__samples-item">
+                  <div class="product__samples-subtitle">ОБразцы</div>
+                  <h3>Поликарбонат</h3>
+                </div>
+                <div class="swiper-arrow">
+                  <div class="prev__wrapper">
+                    <div class="swiper-button-prev-1"></div>
+                  </div>
+                  <div class="next__wrapper">
+                    <div class="swiper-button-next-1"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-container mySwiper-1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/product/image 37.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/product/image 38.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/product/image 39.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/product/image 40.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/product/image 41.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/product/image 37.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/product/image 38.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-tabs">
+      <div class="container">
+        <div class="product__tabs">
+          <div class="product__header">
+            <div class="tab active" href="#tab1">
+              <h3>Технические характеристики</h3>
+              <p>Техническая спецификация навеса</p>
+            </div>
+            <div class="tab" href="#tab2">
+              <h3>Дополнительные услуги</h3>
+              <p>Стоимость дополнительных услуг</p>
+            </div>
+            <div class="tab" href="#tab3">
+              <h3>Оплата</h3>
+              <p>Условия оплаты</p>
+            </div>
+          </div>
+          <div class="product__content" id="tab3">
+            <div class="test">2</div>
+          </div>
+          <div class="product__content" id="tab2">
+            <div class="test">1</div>
+          </div>
+          <div class="product__content activ" id="tab1">
+            <div class="product__content-text">
+              <div class="product__content-left">Столбы (опоры навеса):</div>
+              <div class="product__content-right">80х80 мм</div>
+            </div>
+            <div class="product__content-text">
+              <div class="product__content-left">Опорные лаги (ригель, мауэрлат):</div>
+              <div class="product__content-right">80х80 мм</div>
+            </div>
+            <div class="product__content-text">
+              <div class="product__content-left">Стропильные фермы:</div>
+              <div class="product__content-right">40х25 мм</div>
+            </div>
+            <div class="product__content-text">
+              <div class="product__content-left">Обрешетка (связующий элемент):</div>
+              <div class="product__content-right">40х25 мм</div>
+            </div>
+            <div class="product__content-text">
+              <div class="product__content-left">Производитель </div>
+              <div class="product__content-right">Спецкаркас</div>
+            </div>
+            <div class="product__content-text">
+              <div class="product__content-left">Название модели</div>
+              <div class="product__content-right">Прозрачный навес над террасой №15</div>
+            </div>
+            <div class="product__content-text">
+              <div class="product__content-left">Кровельный материал</div>
+              <div class="product__content-right">Поликарбонат, профнастил, металлочерепица, мягкая кровля</div>
+            </div>
+            <div class="product__content-text">
+              <div class="product__content-left">Окрас металлического навеса</div>
+              <div class="product__content-right">Грунт-эмаль по металлу NOVAX (3 в 1) Стандарт</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery gallery-recomend">
+      <div class="container">
+        <div class="gallery__subtitle">РЕКОМЕНДУЕМ</div>
+        <div class="flex">
+          <h2 class="gallery__title">Смотрите также</h2>
+          <div class="swiper-arrow">
+            <div class="prev__wrapper">
+              <div class="swiper-button-prev-4"></div>
+            </div>
+            <div class="next__wrapper">
+              <div class="swiper-button-next-4"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-container mySwiper-4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/product/image 10.png" alt="">
+              <div class="swiper-slide__text">
+                <h3>Навес веранда на дачю №16</h3>
+                <div class="swiper-slide__price">
+                  <div class="swiper-slide__price-main">5 500 ₽/м2</div>
+                  <div class="swiper-slide__price-old">6 200 ₽/м2</div>
+                </div>
+                <a class="btn" href="#">Заказать</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/product/image 10.png" alt="">
+              <div class="swiper-slide__text">
+                <h3>Навес веранда на дачю №16</h3>
+                <div class="swiper-slide__price">
+                  <div class="swiper-slide__price-main">5 500 ₽/м2</div>
+                  <div class="swiper-slide__price-old">6 200 ₽/м2</div>
+                </div>
+                <a class="btn" href="#">Заказать</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/product/image 10.png" alt="">
+              <div class="swiper-slide__text">
+                <h3>Навес веранда на дачю №16</h3>
+                <div class="swiper-slide__price">
+                  <div class="swiper-slide__price-main">5 500 ₽/м2</div>
+                  <div class="swiper-slide__price-old">6 200 ₽/м2</div>
+                </div>
+                <a class="btn" href="#">Заказать</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/product/image 10.png" alt="">
+              <div class="swiper-slide__text">
+                <h3>Навес веранда на дачю №16</h3>
+                <div class="swiper-slide__price">
+                  <div class="swiper-slide__price-main">5 500 ₽/м2</div>
+                  <div class="swiper-slide__price-old">6 200 ₽/м2</div>
+                </div>
+                <a class="btn" href="#">Заказать</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/product/image 10.png" alt="">
+              <div class="swiper-slide__text">
+                <h3>Навес веранда на дачю №16</h3>
+                <div class="swiper-slide__price">
+                  <div class="swiper-slide__price-main">5 500 ₽/м2</div>
+                  <div class="swiper-slide__price-old">6 200 ₽/м2</div>
+                </div>
+                <a class="btn" href="#">Заказать </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery gallery-white">
+      <div class="container">
+        <div class="gallery__subtitle">Фотогаллерея</div>
+        <div class="flex">
+          <h2 class="gallery__title">Наши работы</h2>
+          <div class="swiper-arrow">
+            <div class="prev__wrapper">
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div class="next__wrapper">
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/gallery/image 10.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/gallery/image 10 (1).png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/gallery/image 10 (2).png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/gallery/image 10 (3).png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/gallery/image 10.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/gallery/image 10 (1).png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/gallery/image 10 (2).png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/gallery/image 10 (3).png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-absolute">
+      <a class="footer__logo" href="#">
+        <img src="img/logo.svg" alt="">
+      </a>
+      <p class="footer__text">Производство навесов из поликарбоната</p>
+      <div class="footer__adress">
+        <div class="footer__ico">
+          <img src="img/map-f.png" alt="">
+        </div>
+        <div class="footer__txt">
+          <div class="footer__subtitle">Наш адрес:</div>
+          <h4>г. Москва, Потаповский переулок, 5с2</h4>
+        </div>
+      </div>
+      <div class="footer__tell">
+        <div class="footer__ico">
+          <img src="img/tell-f.png" alt="">
+        </div>
+        <div class="footer__txt">
+          <div class="footer__subtitle">Наш телефон:</div>
+          <h4>+7 (916) 945-35-75</h4>
+          <li class="footer__time">Пн-Пт: 9:30-18:30</li>
+        </div>
+      </div>
+      <div class="footer__mail">
+        <div class="footer__ico">
+          <img src="img/mail-f.png" alt="">
+        </div>
+        <div class="footer__txt">
+          <div class="footer__subtitle">Наш e-mail:</div>
+          <h4>newnaves@yandex.ru</h4>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer__item">
+          <h2>О нас</h2>
+          <p>Завод металлических конструкций "Спецкаркас" - изготовление, доставка и установка навесов из поликарбоната любой сложности.</p>
+          <div class="footer__social">
+            <a href="#">
+              <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.4994 12.3213C22.4994 18.3964 17.5745 23.3213 11.4995 23.3213C5.42435 23.3213 0.499512 18.3964 0.499512 12.3213C0.499512 6.24615 5.42435 1.32129 11.4995 1.32129C17.5745 1.32129 22.4994 6.24615 22.4994 12.3213Z" fill="white" stroke="#F0F0F0" />
+                <rect x="4.99976" y="6" width="13" height="13" rx="3" fill="#323232" />
+                <rect x="4.99976" y="6" width="13" height="13" rx="3" fill="url(#paint0_linear_3_119)" />
+                <circle cx="11.4998" cy="12.5" r="3" fill="#DA3434" stroke="#E0E0E0" />
+                <circle cx="15.7498" cy="8.75" r="0.75" fill="#E0E0E0" />
+                <defs>
+                  <linearGradient id="paint0_linear_3_119" x1="4.99976" y1="19" x2="17.9998" y2="6" gradientUnits="userSpaceOnUse">
+                    <stop offset="0.114583" stop-color="#E2C944" />
+                    <stop offset="0.515625" stop-color="#DA3434" />
+                    <stop offset="1" stop-color="#E334D2" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </a>
+            <a href="#">
+              <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="11.5" cy="12.3218" r="11" fill="white" stroke="#F0F0F0" />
+                <rect x="4.99951" y="8" width="13" height="9" rx="2" fill="#E94A4A" />
+                <path d="M13.2495 12.067C13.5828 12.2594 13.5828 12.7406 13.2495 12.933L10.9995 14.2321C10.6662 14.4245 10.2495 14.1839 10.2495 13.799L10.2495 11.201C10.2495 10.8161 10.6662 10.5755 10.9995 10.7679L13.2495 12.067Z" fill="white" />
+              </svg>
+            </a>
+            <a href="#">
+              <img src="img/Вк.png" alt="">
+            </a>
+            <a href="#">
+              <img src="img/Тик ток.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="footer__item footer__item-links">
+          <h2>Каталог</h2>
+          <div class="footer__item-ul">
+            <ul>
+              <li>
+                <a class="footer__link" href="#">Арочные навесы</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Двускатные навесы</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Односкатные навесы</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Пристенные навесы</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Навесы к дому</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Пристроенные навесы</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a class="footer__link" href="#">Навесы из поликарбоната</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Навесы из профнастила</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Из металлочерепицы</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Навесы для автомобиля</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Навесы для дачи</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Навесы над входом</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a class="footer__link" href="#">Навесы над крыльцом</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Навесы для террасы</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Навесы для бассейна</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Беседки из поликарбоната</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Входные группы</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Содержание данного интернет ресурса является интеллектуальной собственностью компании "Спецкаркас". Копирование материалов строго запрещено. Не является публичной офертой. © 2022 СПЕЦКАРКАС, Все права защищены</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jquery/dist/jquery.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>

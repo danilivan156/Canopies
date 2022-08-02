@@ -1,0 +1,287 @@
+- var img = 'img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	body
+		main.page-container
+			include blocks/header.pug
+			section.product
+				.container
+					h1 Навес над террасой из поликарбоната №17
+					.breadcrumbs 
+						a(href="#") Главная
+						.breadcrumbs-arrow >
+						a(href="#") Каталог
+						.breadcrumbs-arrow >
+						a(href="#") Арочные навесы
+						.breadcrumbs-arrow >
+						a.breadcrumbs-active(href="#") Навес над террасой из поликарбоната №17
+					.product__main 
+						.product__left 
+							.product__gallery
+								.product__gallery-slider 
+									.swiper-container(class="mySwiper-3")
+										.swiper-wrapper
+											.swiper-slide
+												img(src=img+"product/image 10.png", alt="")
+											.swiper-slide
+												img(src=img+"product/image 10.png", alt="")
+											.swiper-slide
+												img(src=img+"product/image 10.png", alt="")
+											.swiper-slide
+												img(src=img+"product/image 10.png", alt="")
+								.swiper-container(class="mySwiper-2")
+									.swiper-wrapper
+										.swiper-slide
+											img(src=img+"product/image 10.png", alt="")
+										.swiper-slide
+											img(src=img+"product/image 10.png", alt="")
+										.swiper-slide
+											img(src=img+"product/image 10.png", alt="")
+										.swiper-slide
+											img(src=img+"product/image 10.png", alt="")
+							.product__project 
+								img.product__absolute-1(src=img+"product/image 47.png", alt="")
+								img.product__absolute-2(src=img+"product/image 28.png", alt="")
+								img.product__absolute-3(src=img+"product/image 17.png", alt="")
+								img.product__absolute-4(src=img+"product/image 17 (1).png", alt="")
+								h2 Не можете определиться с видом навеса?
+								p Оставьте заявку на 3D-проект Вашего навеса бесплатно  и посмотрите, как он будет выглядеть на Вашем участке
+								a.btn(href="#") ЗАказать 3D проект
+						.product__right 
+							.product__zakaz 
+								.product__zakaz-block 
+									.product__price 
+										.product__price-main 5 500 ₽/м2
+										.product__price-old 6 200 ₽/м2
+									p Ближайший монтаж: <span>03 апреля</span>
+								a.btn(href="#") Заказать навес
+							.product__type 
+								h3 Выберите тип конструкции:
+								.flex 
+									.check__tab
+										input(type="checkbox" id="check-1")
+										label(for="check-1") 
+											.check__ico 
+												img(src=img+"product/image 15.png", alt="")
+											.check__title Стандарт
+											.check__subtitle 4 500 ₽/м2
+									.check__tab
+										input(type="checkbox" id="check-2")
+										label(for="check-2")
+											.check__ico 
+												img(src=img+"product/image 15.png", alt="")
+											.check__title Престиж
+											.check__subtitle 5 500 ₽/м2
+									.check__tab
+										input(type="checkbox" id="check-3")
+										label(for="check-3") 
+											.check__ico 
+												img(src=img+"product/image 15.png", alt="")
+											.check__title Флагман
+											.check__subtitle 6 500 ₽/м2
+									.check__tab
+										input(type="checkbox" id="check-4")
+										label(for="check-4") 
+											.check__ico 
+												img(src=img+"product/image 15.png", alt="")
+											.check__title Спецкаркас
+											.check__subtitle 8 000 ₽/м2
+							.product__construction
+								.product__construction-left 
+									h3 Конструкция «Стандарт»
+									.product__datas 
+										.product__data
+											.product__data-name Столбы:
+											.product__data-circle
+											.product__data-count 60х60 мм
+										.product__data
+											.product__data-name Лаги:
+											.product__data-circle
+											.product__data-count 60х60 мм
+										.product__data
+											.product__data-name Фермы:
+											.product__data-circle
+											.product__data-count 25х25 мм
+										.product__data
+											.product__data-name Обрешётка:
+											.product__data-circle
+											.product__data-count 25х25 мм
+									a(href="#") Смотреть все характеристики
+								.product__construction-right 
+									ul 
+										li Материал и цвет кровли <b>на выбор</b>
+										li Конструкция <b>любой сложности</b>
+										li Изготовление <b>2-3 дня</b>
+										li Окрас в любой цвет по <a href="#">RAL</a>
+							.product__images 
+								.product__image
+									img.product__image-img(class="img-1" src=img+"2121641585_w640_h640_lobovoe-steklo-scania 1.png", alt="")
+									img.product__image-absol1(src=img+"image 17.png", alt="")
+									.product__image-ico 
+										img(src=img+"product/image 15.png", alt="")
+									h4 <b>Бесплатная</b> <br>доставка и монтаж
+								.product__image
+									img.product__image-img(class="img-2" src=img+"Silver Shield.H03 1.png", alt="")
+									img.product__image-absol2(src=img+"image 17 (1).png", alt="")
+									.product__image-ico 
+										img(src=img+"product/image 15.png", alt="")
+									h4 Расширенная<br> гарантия <b>до 10 лет</b>
+								.product__image
+									img(class="img-3" src=img+"image 16.png", alt="")
+									.product__image-ico 
+										img(src=img+"product/image 15.png", alt="")
+									h4 Изготовим<br> <b>любой</b> размер
+							.product__samples
+								.flex
+									.product__samples-item
+										.product__samples-subtitle ОБразцы
+										h3 Поликарбонат
+									.swiper-arrow
+										.prev__wrapper
+											.swiper-button-prev-1
+										.next__wrapper
+											.swiper-button-next-1
+								.swiper-container(class="mySwiper-1")
+									.swiper-wrapper
+										.swiper-slide
+											img(src=img+"product/image 37.png", alt="")
+										.swiper-slide
+											img(src=img+"product/image 38.png", alt="")
+										.swiper-slide
+											img(src=img+"product/image 39.png", alt="")
+										.swiper-slide
+											img(src=img+"product/image 40.png", alt="")
+										.swiper-slide
+											img(src=img+"product/image 41.png", alt="")
+										.swiper-slide
+											img(src=img+"product/image 37.png", alt="")
+										.swiper-slide
+											img(src=img+"product/image 38.png", alt="")
+			section.product-tabs 
+				.container 
+					.product__tabs 
+						.product__header 
+							.tab(class="active" href="#tab1")
+								h3 Технические характеристики
+								p Техническая спецификация навеса
+							.tab(href="#tab2")
+								h3 Дополнительные услуги
+								p Стоимость дополнительных услуг
+							.tab(href="#tab3")
+								h3 Оплата
+								p Условия оплаты
+						.product__content(id="tab3")
+							.test 2
+						.product__content(id="tab2")
+							.test 1
+						.product__content(class="activ" id="tab1")
+							.product__content-text 
+								.product__content-left Столбы (опоры навеса):
+								.product__content-right 80х80 мм
+							.product__content-text 
+								.product__content-left Опорные лаги (ригель, мауэрлат):
+								.product__content-right 80х80 мм
+							.product__content-text 
+								.product__content-left Стропильные фермы:
+								.product__content-right 40х25 мм
+							.product__content-text 
+								.product__content-left Обрешетка (связующий элемент):
+								.product__content-right 40х25 мм
+							.product__content-text 
+								.product__content-left Производитель	
+								.product__content-right Спецкаркас
+							.product__content-text 
+								.product__content-left Название модели
+								.product__content-right Прозрачный навес над террасой №15
+							.product__content-text 
+								.product__content-left Кровельный материал
+								.product__content-right Поликарбонат, профнастил, металлочерепица, мягкая кровля
+							.product__content-text 
+								.product__content-left Окрас металлического навеса
+								.product__content-right Грунт-эмаль по металлу NOVAX (3 в 1) Стандарт
+			section.gallery(class="gallery-recomend")
+				.container
+					.gallery__subtitle РЕКОМЕНДУЕМ
+					.flex
+						h2.gallery__title Смотрите также
+						.swiper-arrow
+							.prev__wrapper
+								.swiper-button-prev-4
+							.next__wrapper
+								.swiper-button-next-4
+					.swiper-container(class="mySwiper-4")
+						.swiper-wrapper
+							.swiper-slide
+								img(src=img+"product/image 10.png", alt="")
+								.swiper-slide__text 
+									h3 Навес веранда на дачю №16
+									.swiper-slide__price 
+										.swiper-slide__price-main 5 500 ₽/м2
+										.swiper-slide__price-old 6 200 ₽/м2
+									a.btn(href="#") Заказать
+							.swiper-slide
+								img(src=img+"product/image 10.png", alt="")
+								.swiper-slide__text 
+									h3 Навес веранда на дачю №16
+									.swiper-slide__price 
+										.swiper-slide__price-main 5 500 ₽/м2
+										.swiper-slide__price-old 6 200 ₽/м2
+									a.btn(href="#") Заказать
+							.swiper-slide
+								img(src=img+"product/image 10.png", alt="")
+								.swiper-slide__text 
+									h3 Навес веранда на дачю №16
+									.swiper-slide__price 
+										.swiper-slide__price-main 5 500 ₽/м2
+										.swiper-slide__price-old 6 200 ₽/м2
+									a.btn(href="#") Заказать
+							.swiper-slide
+								img(src=img+"product/image 10.png", alt="")
+								.swiper-slide__text 
+									h3 Навес веранда на дачю №16
+									.swiper-slide__price 
+										.swiper-slide__price-main 5 500 ₽/м2
+										.swiper-slide__price-old 6 200 ₽/м2
+									a.btn(href="#") Заказать
+							.swiper-slide
+								img(src=img+"product/image 10.png", alt="")
+								.swiper-slide__text 
+									h3 Навес веранда на дачю №16
+									.swiper-slide__price 
+										.swiper-slide__price-main 5 500 ₽/м2
+										.swiper-slide__price-old 6 200 ₽/м2
+									a.btn(href="#") Заказать		
+							
+			section.gallery(class="gallery-white")
+				.container
+					.gallery__subtitle Фотогаллерея
+					.flex
+						h2.gallery__title Наши работы
+						.swiper-arrow
+							.prev__wrapper
+								.swiper-button-prev
+							.next__wrapper
+								.swiper-button-next
+					.swiper-container(class="mySwiper")
+						.swiper-wrapper
+							.swiper-slide
+								img(src=img+"gallery/image 10.png", alt="")
+							.swiper-slide
+								img(src=img+"gallery/image 10 (1).png", alt="")
+							.swiper-slide
+								img(src=img+"gallery/image 10 (2).png", alt="")
+							.swiper-slide
+								img(src=img+"gallery/image 10 (3).png", alt="")
+							.swiper-slide
+								img(src=img+"gallery/image 10.png", alt="")
+							.swiper-slide
+								img(src=img+"gallery/image 10 (1).png", alt="")
+							.swiper-slide
+								img(src=img+"gallery/image 10 (2).png", alt="")
+							.swiper-slide
+								img(src=img+"gallery/image 10 (3).png", alt="")
+		include blocks/footer.pug
+		include blocks/scripts.pug

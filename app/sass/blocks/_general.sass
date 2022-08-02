@@ -1,0 +1,1253 @@
+// main page elements
+body
+	font-size: 14px
+	color: #323232
+	font-family: 'Gilroy'
+	font-weight: 400
+	background: white
+	overflow-x: hidden
+	// +scrollbar(10px, auto, $yellow, $gray2, $dark, null)
+
+.flex
+	display: flex
+
+b
+	font-weight: 600
+h2
+	font-weight: 400
+	line-height: 140%
+p
+	line-height: 140%
+
+.btn
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	color: white
+	background: #08B84E
+	border-radius: 10px
+
+.page-container
+	max-width: 1920px
+	width: 100%
+	margin: 0 auto
+	overflow: hidden
+
+.container
+	position: relative
+	max-width: 1170px
+	width: 100%
+	padding: 0
+	margin: 0 auto
+	+mq($max-width: 1200px)
+		padding: 0 15px
+		max-width: 100%
+	+mq($max-width: 575px)
+		padding: 0 10px
+.main-block > .main-block__sect
+	margin-top: 71px
+.main-block
+	position: relative
+	&__bg
+		position: absolute
+		width: 100%
+		z-index: -1
+		right: 0
+		max-height: 1050px
+	&__absolute-2
+		position: absolute
+		box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.05)
+		background: #FFFFFF
+		max-width: 170px
+		border-radius: 10px
+		height: 216px
+		width: 100%
+		padding-top: 81px
+		padding-bottom: 45px
+		padding-left: 5px
+		padding-right: 5px
+		right: 0
+		top: 85px
+		.abs
+			position: absolute
+			top: -60px
+			left: -22px
+		h4
+			font-size: 34px
+			line-height: 140%
+			font-weight: 700
+			text-align: center
+			color: #08B84E
+		p
+			margin: 0 auto
+			font-size: 20px
+			line-height: 140%
+			font-weight: 400
+			max-width: 102px
+		a
+			background: #FFFFFF
+			width: 40px
+			height: 40px
+			display: flex
+			align-items: center
+			justify-content: center
+			margin: 0 auto
+			border-radius: 100%
+			position: absolute
+			bottom: -20px
+			left: 0
+			right: 0
+
+	&__absolute-1
+		right: 283px
+		top: 105px
+		background: #FFFFFF
+		box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.05)
+		border-radius: 10px
+		max-width: 170px
+		width: 100%
+		height: 60px
+		font-weight: 400
+		font-size: 14px
+		line-height: 140%
+		padding-right: 30px
+		padding-left: 30px
+		display: flex
+		align-items: center
+		color: grey
+		position: absolute
+		&:after
+			margin: auto
+			position: absolute
+			content: '+'
+			width: 26px
+			height: 26px
+			border-radius: 100%
+			background: #08B84E
+			left: -13px
+			top: 0
+			bottom: 0
+			font-weight: 600
+			font-size: 25px
+			line-height: 140%
+			color: white
+			display: flex
+			align-items: center
+			justify-content: center
+			box-shadow: inset 0px 0px 20px rgba(255, 255, 255, 0.5)
+	.main-block__sect	
+		h1
+			margin-bottom: 47px
+			font-size: 56px
+			max-width: 635px
+			font-weight: 400
+			span
+				background-image: url("../img/Rectangle 122.png");
+				background-repeat: no-repeat
+				font-weight: 600
+				font-size: 42px
+				color: white
+				padding-top: 9px
+				padding-bottom: 8px
+				padding-left: 39px
+				padding-right: 39px
+				line-height: 42px
+		.main-block__subtitle
+			font-size: 24px
+			margin-bottom: 60px
+			line-height: 140%
+			display: flex
+			gap: 20px
+			align-items: self-start
+			.circles
+				display: flex
+				align-items: center
+				gap: 4px
+				margin-top: 10px
+				.cirle-1
+					width: 10px
+					height: 10px
+					border-radius: 100%
+					background: #DEFFEB
+					border: 1px solid #08B84E
+				.cirle-2
+					width: 8px
+					height: 8px
+					border-radius: 100%
+					background: #DEFFEB
+					opacity: 0.5
+					border: 1px solid #08B84E
+				.cirle-3
+					width: 4px
+					height: 4px
+					border-radius: 100%
+					background: #DEFFEB
+					opacity: 0.3
+					border: 1px solid #08B84E
+			.sub-txt
+				max-width: 536px
+	&__items
+		gap: 10px
+		.main-block__item
+			position: relative
+			background: white
+			max-width: 243px
+			height: 180px
+			width: 100%
+			display: flex
+			align-items: center
+			flex-direction: column
+			padding-top: 10px
+			box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.05)
+			border-radius: 10px
+			p
+				max-width: 163px
+				text-align: center
+			&-images
+				.main-block__item-img
+					position: relative
+					z-index: 1
+				.absol-1
+					top: 35px
+					left: 45px
+					z-index: 0
+					position: absolute
+				.absol-2
+					top: 30px
+					right: 65px
+					z-index: 0
+					position: absolute
+				.icon
+					margin: 0 auto
+					left: 0
+					right: 0
+					z-index: 2
+					display: flex
+					position: absolute
+					top: 90px
+					width: 16px
+					height: 16px
+					border-radius: 100%
+					display: flex
+					align-items: center
+					justify-content: center
+					background: #08B84E
+					box-shadow: inset 0px 0px 20px rgba(255, 255, 255, 0.5)
+	&__params
+		align-items: center
+		margin-bottom: 60px
+		.main-block__text
+			text-shadow: 0px 0px 10px #FFFFFF
+			font-size: 18px
+			max-width: 220px
+			line-height: 140%
+			a
+				color: #23A2D9
+				border-bottom: 1px dashed #23A2D9
+		.arrow
+			margin-right: 15px
+		.btn
+			display: flex
+			align-items: center
+			justify-content: center
+			max-width: 320px
+			width: 100%
+			height: 96px
+			background: #08B84E
+			box-shadow: 0px 3px 0px #0AA347, inset 0px 0px 150px 5px rgba(255, 255, 255, 0.47)
+			border-radius: 10px
+			margin-right: 22px
+			img
+				margin-right: 21px
+			.text
+				.w-700
+					font-weight: 700
+					color: white
+					font-size: 18px
+					margin-bottom: 2px
+					letter-spacing: 0.1em
+					text-transform: uppercase
+				.txt
+					font-size: 16px
+					color: white
+.catalog
+	margin-top: 214px
+	&__subtitle
+		font-weight: 400
+		opacity: 0.6
+		text-align: center
+		letter-spacing: 0.1em
+		text-transform: uppercase
+		font-size: 26px
+		margin-bottom: 25px
+	h2
+		text-align: center
+		font-size: 46px
+		margin-bottom: 50px
+	&__items
+		display: flex
+		flex-wrap: wrap
+		gap: 16.5px
+	&__item
+		box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05)
+		border-radius: 10px
+		a
+			img
+				border-radius: 10px 10px 0 0
+				max-width: 280px
+				width: 100%
+		.flex
+			padding-left: 22px
+			padding-right: 15px
+			justify-content: space-between
+			padding-bottom: 15px
+			padding-top: 15px
+			align-items: center
+			.catalog__txt
+				font-size: 15px
+			a
+				background: #08B84E
+				box-shadow: inset 0px 0px 40px rgba(255, 255, 255, 0.5)
+				width: 30px
+				height: 30px
+				border-radius: 100%
+				display: flex
+				align-items: center
+				justify-content: center
+				img
+					max-width: 10px
+
+.company
+	margin-top: 47px
+	position: relative
+	&__bg
+		position: absolute
+		z-index: -1
+		right: -120px
+	&__bg-1
+		position: absolute
+		z-index: -1
+		right: 0
+		left: 403px
+		bottom: 4px
+	&__bg-2
+		position: absolute
+		z-index: -1
+		left: 492px
+		bottom: 33px
+	&__absolute
+		background-image: url("../img/Rectangle 120.png");
+		background-repeat: no-repeat
+		position: absolute
+		border-radius: 10px
+		max-width: 356px
+		width: 100%
+		display: flex
+		align-items: center
+		height: 87px
+		z-index: 2
+		padding-left: 28px
+		padding-right: 35px
+		right: 0
+		top: 81px
+		&-number
+			font-weight: 800
+			background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.2) 121.32%)
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent
+			background-clip: text
+			text-fill-color: transparent
+			font-size: 62px
+			line-height: 130%
+			margin-right: 20px
+		&-txt
+			font-size: 20px
+			line-height: 130%
+			color: white
+			max-width: 201px
+		&::after
+			width: 23px
+			height: 23px
+			border-radius: 100%
+			display: flex
+			align-items: center
+			justify-content: center
+			content: '+'
+			position: absolute
+			left: -7px
+			color: #80808052
+			background: white
+			font-weight: 800
+			font-size: 20px
+	&__subtitle
+		padding-top: 49px
+		font-weight: 400
+		opacity: 0.6
+		letter-spacing: 0.1em
+		text-transform: uppercase
+		font-size: 26px
+		margin-bottom: 25px
+	h2
+		font-size: 46px
+		max-width: 635px
+		margin-bottom: 40px
+	&__txt
+		font-size: 24px
+		font-weight: 400
+		max-width: 536px
+		margin-bottom: 50px
+		line-height: 140%
+	.flex
+		gap: 15px
+		.company__item
+			box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.05)
+			border-radius: 10px
+			display: flex
+			align-items: center
+			background: white
+			max-width: 380px
+			width: 100%
+			img
+			&-txt
+				margin-left: 10px
+				h3
+					margin-bottom: 13px
+					font-size: 18px
+				p
+					line-height: 140%
+					max-width: 165px
+					font-size: 16px
+					opacity: 0.6
+.production
+	overflow: hidden
+	position: relative
+	margin-top: 92px
+	&__fon
+		position: absolute
+		bottom: -120px
+		z-index: 0
+	&__bg
+		position: absolute
+		z-index: -1
+		top: 407px
+	&__subtitle
+		padding-top: 49px
+		font-weight: 400
+		opacity: 0.6
+		letter-spacing: 0.1em
+		text-transform: uppercase
+		text-align: center
+		font-size: 26px
+		margin-bottom: 25px
+		line-height: 140%
+	h2
+		margin: 0 auto
+		text-align: center
+		font-size: 46px
+		max-width: 635px
+		margin-bottom: 40px
+	&__txt
+		max-width: 1022px
+		font-size: 24px
+		text-align: center
+		margin: 0 auto
+		margin-bottom: 50px
+		line-height: 140%
+	a
+		display: flex
+		align-items: center
+		justify-content: center
+		max-width: 300px
+		width: 100%
+		height: 82px
+		letter-spacing: 0.1em
+		text-transform: uppercase
+		font-size: 18px
+		color: white
+		font-weight: bold
+		margin: 0 auto
+		margin-bottom: 263px
+		background: #08B84E
+		box-shadow: 0px 3px 0px #0AA347, inset 0px 0px 150px 5px rgba(255, 255, 255, 0.47)
+		border-radius: 10px
+	.flex
+		justify-content: space-between
+		.production__item
+			max-width: 240px
+			width: 100%
+			height: 226px
+			padding-left: 35px
+			padding-top: 52px
+			padding-bottom: 34px
+			background-image: url("../img/Rectangle 118.png");
+			background-repeat: no-repeat
+			&-number
+				font-size: 52px
+				font-weight: bold
+				color: white
+			p
+				font-size: 20px
+				color: white
+				line-height: 140%
+		.production__item-green
+			margin-top: 44px
+			background-image: url("../img/Rectangle 119.png");
+			background-repeat: no-repeat
+			
+.delivery
+	background: linear-gradient(180deg, rgba(246, 246, 246, 0) 0%, #F7F7F7 21.85%)
+	.delivery__man
+		position: absolute
+		bottom: 0
+		z-index: 2
+		right: 103px
+	.delivery-cart
+		max-height: 440px
+		border-radius: 10px
+		margin-top: 92px
+		background: white
+		padding-top: 55px
+		padding-left: 85px
+		position: relative
+		.delivery__subtitle
+			font-weight: 400
+			max-height: 19px
+			opacity: 0.6
+			letter-spacing: 0.1em
+			text-transform: uppercase
+			font-size: 26px
+			margin-bottom: 25px
+			line-height: 140%
+		.delivery__title
+			max-height: 104px
+			line-height: 140%
+			font-size: 46px
+			max-width: 485px
+			margin-bottom: 39px
+		.delivery__txt
+			z-index: 2
+			font-size: 18px
+			position: absolute
+			max-width: 267px
+			line-height: 140%
+			bottom: 70px
+			left: 417px
+		.delivery__rub
+			line-height: 165px
+			font-size: 220px
+			font-weight: 900
+			background: linear-gradient(180deg, #23A2D9 0%, rgba(35, 162, 217, 0.869792) 13.02%, rgba(35, 162, 217, 0) 100%)
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent
+			background-clip: text
+			text-fill-color: transparent
+		img
+			position: absolute
+		.delivery__car
+			top: 0
+			right: 44px
+		.delivery__bg-1
+			position: absolute
+			z-index: 3
+			left: 205px
+			bottom: 0
+		.delivery__bg-2
+			position: absolute
+			z-index: 2
+			left: 249px
+			bottom: 0
+		.delivery__bg-3
+			position: absolute
+			z-index: 1
+			right: 295px
+			bottom: 0
+.swiper-container
+	max-width: 1170px
+	margin: 0 auto
+	overflow: hidden
+.prev__wrapper, .next__wrapper
+	width: 44px
+	height: 44px
+	border-radius: 100%
+	border: 1px solid #08B84E
+	background: inherit
+	display: flex
+	align-items: center
+	justify-content: center
+.swiper-button-next-1, .swiper-button-prev-1,.swiper-button-next-4, .swiper-button-prev-4
+	cursor: pointer
+.swiper-button-next, .swiper-button-prev, .swiper-button-next-4, .swiper-button-prev-4, .swiper-button-next-1, .swiper-button-prev-1
+	position: relative
+	width: 15px
+	height: 11px
+	right: 0
+	left: 0
+	top: 0
+	margin-top: 0
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled
+	opacity: 1
+.swiper-button-next:after, .swiper-button-next-4:after, .swiper-button-next-1:after
+	display: none
+.swiper-button-prev:after, .swiper-button-prev-4:after, .swiper-button-prev-1:after
+	display: none
+.swiper-button-next, .swiper-button-next-4, .swiper-button-next-1
+	background-image: url("../img/right.png");
+.swiper-button-prev, .swiper-button-prev-4, .swiper-button-prev-1
+	background-image: url("../img/left.png");
+.swiper-arrow 
+	display: flex
+	gap: 16px
+.gallery
+	padding-top: 94px
+	padding-bottom: 94px
+	background: #F7F7F7
+	.flex
+		margin-bottom: 50px
+		align-items: center
+		justify-content: space-between
+	&__subtitle
+		font-weight: 400
+		font-size: 26px
+		line-height: 140%
+		letter-spacing: 0.1em
+		text-transform: uppercase
+		margin-bottom: 25px
+		opacity: 0.6
+	&__title
+		font-weight: 400
+		font-size: 46px
+		line-height: 140%
+.models
+	background: #F7F7F7
+	padding-bottom: 80px
+	&__subtitle
+		font-weight: 400
+		opacity: 0.6
+		letter-spacing: 0.1em
+		text-transform: uppercase
+		font-size: 26px
+		margin-bottom: 25px
+		line-height: 140%
+	.flex
+		justify-content: space-between
+		margin-bottom: 50px
+		align-items: center
+		.models__title
+			line-height: 140%
+			font-size: 46px
+		a
+			background: inherit
+			letter-spacing: 0.1em
+			display: flex
+			justify-content: center
+			align-items: center
+			text-transform: uppercase
+			color: #08B84E
+			border: 1px solid #08B84E
+			box-shadow: inset 0px 0px 150px 5px rgba(255, 255, 255, 0.47)
+			border-radius: 10px
+			gap: 5px
+			max-width: 170px
+			height: 50px
+			width: 100%
+	&__items
+		display: flex
+		flex-wrap: wrap
+		gap: 16.5px
+	&__txt
+		padding: 30px
+	&__item
+		max-width: 280px
+		background: #FFFFFF
+		box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05)
+		border-radius: 10px
+		img
+			border-radius: 10px 10px 0px 0px
+			max-width: 280px
+		p
+			font-weight: 400
+			font-size: 16px
+			line-height: 130%
+			margin-bottom: 22px
+			min-height: 41px
+		a
+			font-weight: 700
+			font-size: 14px
+			line-height: 140%
+			color: white
+			background: #08B84E
+			display: flex
+			align-items: center
+			justify-content: center
+			letter-spacing: 0.1em
+			text-transform: uppercase
+			max-width: 160px
+			height: 48px
+			width: 100%
+			border-radius: 10px
+			box-shadow: 0px 2px 0px #0AA347, inset 0px 0px 70px 5px rgba(255, 255, 255, 0.47)
+	&__price
+		display: flex
+		align-items: center
+		gap: 10px
+		margin-bottom: 22px
+		&-main
+			font-weight: 600
+			font-size: 20px
+			line-height: 140%
+		&-old
+			font-weight: 600
+			font-size: 20px
+			line-height: 140%
+			opacity: 0.2
+			text-decoration-line: line-through
+.video
+	margin-top: 74px
+	&__subtitle
+		font-weight: 400
+		opacity: 0.6
+		letter-spacing: 0.1em
+		text-transform: uppercase
+		font-size: 26px
+		margin-bottom: 25px
+		line-height: 140%
+	.flex
+		justify-content: space-between
+		margin-bottom: 50px
+		align-items: center
+		.video__title
+			line-height: 140%
+			font-size: 46px
+		a
+			background: inherit
+			letter-spacing: 0.1em
+			display: flex
+			justify-content: center
+			align-items: center
+			text-transform: uppercase
+			color: #08B84E
+			border: 1px solid #08B84E
+			box-shadow: inset 0px 0px 150px 5px rgba(255, 255, 255, 0.47)
+			border-radius: 10px
+			gap: 5px
+			max-width: 231px
+			height: 50px
+			width: 100%
+	&__block
+		display: flex
+	&__scroll
+		padding-left: 14px
+		max-height: 427px
+		overflow-y: auto
+		display: flex
+		flex-direction: column
+		gap: 16px
+	.video__scroll::-webkit-scrollbar
+		width: 5px
+	.video__scroll::-webkit-scrollbar-track
+		background: #F2F2F2
+		border-radius: 3px
+	.video__scroll::-webkit-scrollbar-thumb
+		background: #E0E0E0
+		border-radius: 3px
+	&__item
+		margin-right: 10px
+		box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.05)
+		border-radius: 10px
+		max-width: 340px
+		min-width: 340px
+		width: 100%
+		min-height: 130px
+		display: flex
+		align-items: center
+		justify-content: center
+		gap: 18px
+		&-text
+			max-width: 170px
+		&-image
+			position: relative
+			.video__item-absolute
+				margin: auto
+				width: 24px
+				height: 24px
+				position: absolute
+				display: flex
+				align-items: center
+				justify-content: center
+				border-radius: 100%
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				background: #08B84E
+				box-shadow: inset 0px 0px 50px 5px rgba(255, 255, 255, 0.47)
+				svg
+					width: 15px
+					height: 15px
+					margin-left: 3px
+			img
+				max-width: 120px
+				border-radius: 6px
+	&__main
+		max-width: 800px
+		width: 100%
+		position: relative
+		border-radius: 10px
+		&-svg
+			width: 60px
+			height: 60px
+			border-radius: 100%
+			display: flex
+			align-items: center
+			justify-content: center
+			background: #08B84E
+			margin-bottom: 15px
+			box-shadow: inset 0px 0px 50px 5px rgba(255, 255, 255, 0.47)
+			svg
+				width: 38px
+				height: 38px
+				margin-left: 5px
+		&-absolute
+			display: flex
+			align-items: center
+			justify-content: center
+			flex-direction: column
+			left: 0
+			right: 0
+			bottom: 0
+			top: 0
+			z-index: 2
+			position: absolute
+			p
+				letter-spacing: 0.1em
+				text-transform: uppercase
+				font-size: 12px
+				color: white
+				border-bottom: 1px dashed #FFFFFF
+.map
+	margin-top: 90px
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: center
+	.container
+		display: flex
+		justify-content: end
+		align-items: center
+		position: absolute
+		top: 0
+		bottom: 0
+	&__block
+		box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1)
+		border-radius: 10px
+		background: white
+		max-width: 655px
+		width: 100%
+		padding-left: 80px
+		padding-top: 75px
+		padding-right: 73px
+		padding-bottom: 73px
+	&__subtitle
+		letter-spacing: 0.1em
+		text-transform: uppercase
+		color: #999999
+		font-weight: 400
+		margin-bottom: 25px
+		font-size: 26px
+		line-height: 140%
+	&__title
+		font-weight: 500
+		font-size: 46px
+		line-height: 140%
+		margin-bottom: 40px
+	&__txt
+		line-height: 140%
+		font-weight: 300
+		font-size: 24px
+		margin-bottom: 20px
+	a
+		box-shadow: 0px 3px 0px #0AA347, inset 0px 0px 150px 5px rgba(255, 255, 255, 0.47)
+		max-width: 260px
+		height: 66px
+		letter-spacing: 0.1em
+		text-transform: uppercase
+		font-weight: 700
+		font-size: 18px
+		line-height: 140%
+.baner-main
+	margin-top: 62px
+	padding-left: 58px
+	padding-right: 58px
+	align-items: center
+	display: flex
+	background: #FFFFFF
+	box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.05)
+	border-radius: 10px
+	justify-content: space-between
+	padding-top: 2px
+	padding-bottom: 2px
+	a
+		box-shadow: 0px 3px 0px #0AA347, inset 0px 0px 150px rgba(255, 255, 255, 0.47)
+		max-width: 270px
+		height: 72px
+		font-weight: 700
+		font-size: 18px
+		line-height: 140%
+		letter-spacing: 0.1em
+		text-transform: uppercase
+	&__text
+		p
+			font-size: 16px
+			line-height: 130%
+		h3
+			margin-bottom: 12px
+			font-weight: 400
+			font-size: 33px
+			line-height: 140%
+			display: flex
+			align-items: center
+			div
+				font-weight: 600
+				font-size: 36px
+				line-height: 140%
+				background-image: url("../img/Rectangle 121.png");
+				background-repeat: no-repeat
+				max-width: 106px
+				width: 100%
+				display: flex
+				align-items: center
+				justify-content: center
+				color: white
+				display: inline
+				height: 42px
+				text-align: center
+				margin-right: 9px
+.project
+	margin-top: 90px
+	&__absolute
+		right: 0
+		display: flex
+		top: 20px
+		position: absolute
+		background: #FFFFFF
+		height: 100px
+		align-items: center
+		max-width: 334px
+		width: 100%
+		box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.05)
+		border-radius: 10px
+		padding-left: 64px
+		img
+			position: absolute
+			left: -35px
+		&-text
+			p
+				font-weight: 400
+				font-size: 18px
+				line-height: 140%
+			h3
+				font-weight: 600
+				font-size: 24px
+				span
+					color: #08B84E
+	&__left
+		margin-right: 59px
+		position: relative
+		display: flex
+		align-items: end
+		&-img
+			max-width: 498px
+		&-absolute
+			position: absolute
+			bottom: 47px
+			right: 0px
+			z-index: -1
+	&__right
+		h2
+			font-weight: 400
+			font-size: 46px
+			line-height: 140%
+			margin-bottom: 40px
+			max-width: 568px
+		.project__txt
+			font-weight: 400
+			font-size: 24px
+			line-height: 140%
+			max-width: 564px
+			margin-bottom: 44px
+		a
+			box-shadow: 0px 3px 0px #0AA347, inset 0px 0px 150px 5px rgba(255, 255, 255, 0.7)
+			height: 100px
+			max-width: 410px
+			letter-spacing: 0.1em
+			text-transform: uppercase
+			font-weight: 700
+			font-size: 18px
+			line-height: 140%
+	&__items
+		display: flex
+		gap: 16.5px
+		margin-top: 75px
+	&__item
+		background: #F6F6F6
+		border-radius: 10px
+		padding-top: 35px
+		padding-left: 40px
+		height: 251px
+		max-width: 280px
+		width: 100%
+		position: relative
+		h3
+			font-weight: 600
+			font-size: 24px
+			line-height: 20px
+			margin-bottom: 13px
+		p
+			font-weight: 400
+			font-size: 18px
+			line-height: 130%
+		img
+			position: absolute
+			bottom: 0
+			right: 0
+.article
+	margin-top: 100px
+	padding-bottom: 100px
+	&__subtitle
+		letter-spacing: 0.1em
+		text-transform: uppercase
+		font-weight: 400
+		font-size: 26px
+		line-height: 140%
+		margin-bottom: 25px
+		opacity: 0.6
+	&__title
+		font-weight: 400
+		font-size: 46px
+		line-height: 140%
+		background: radial-gradient(88.61% 88.61% at 50.08% 56.96%, #323232 0%, rgba(0, 0, 0, 0.5) 100%)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		background-clip: text
+		text-fill-color: transparent
+		
+	.flex
+		margin-bottom: 50px
+		justify-content: space-between
+		align-items: center
+		a
+			border: 1px solid #08B84E
+			box-sizing: border-box
+			box-shadow: inset 0px 0px 150px 5px rgba(255, 255, 255, 0.47)
+			border-radius: 10px
+			max-width: 156px
+			width: 100%
+			height: 50px
+			background: inherit
+			color: #08B84E
+			letter-spacing: 0.1em
+			text-transform: uppercase
+			font-weight: 400
+			font-size: 14px
+			display: flex
+			align-items: center
+			justify-content: center
+			gap: 5px
+			line-height: 140%
+	&__items
+		display: flex
+		gap: 15px
+	&__item
+		box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05)
+		border-radius: 10px
+		max-width: 380px
+		width: 100%
+		
+		img
+			max-width: 380px
+		&-date
+			background: #3CC773
+			border-radius: 3px
+			max-width: 129px
+			width: 100%
+			display: flex
+			align-items: center
+			justify-content: center
+			font-weight: 400
+			font-size: 12px
+			line-height: 140%
+			height: 28px
+			color: white
+			margin-bottom: 18px
+		&-txt
+			padding-top: 25px
+			padding-bottom: 35px
+			padding-left: 40px
+			padding-right: 40px
+			background: white
+			position: relative
+			height: 286px
+			h4
+				font-weight: 400
+				font-size: 20px
+				line-height: 140%
+				margin-bottom: 15px
+			p
+				font-weight: 400
+				font-size: 13px
+				line-height: 140%
+				margin-bottom: 18px
+			a
+				position: absolute
+				bottom: 40px
+				left: 35px
+				letter-spacing: 0.1em
+				text-transform: uppercase
+				font-weight: 400
+				font-size: 12px
+				line-height: 140%
+				color: #23A2D9
+				border-bottom: 1px dashed #23A2D9
+.cost-online
+	position: relative
+	&__title
+		font-weight: 400
+		font-size: 46px
+		line-height: 140%
+		text-align: center
+		margin-bottom: 39px
+	&__bg
+		position: absolute
+		z-index: -1
+		top: 260px
+		left: 0
+		right: 0
+		margin: 0 auto
+	&__kust-1
+		position: absolute
+		left: 68px
+		top: 650px
+	&__kust-2
+		position: absolute
+		right: 65px
+		top: 670px
+	&__item
+		background: #FFFFFF
+		box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.1)
+		border-radius: 10px
+		position: relative
+		max-width: 165px
+		width: 100%
+		height: 60px
+		display: flex
+		align-items: center
+		justify-content: center
+		&-ico
+			margin: auto
+			top: 0
+			bottom: 0
+			position: absolute
+			left: -10px
+			box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.1)
+			border-radius: 10px
+			width: 26px
+			height: 26px
+			background: #08B84E
+			border-radius: 100%
+			display: flex
+			align-items: center
+			justify-content: center
+		p
+			font-weight: 400
+			font-size: 22px
+			line-height: 140%
+	.flex
+		gap: 35px
+		margin-bottom: 38px
+		justify-content: center
+	a
+		font-weight: 700
+		font-size: 18px
+		line-height: 140%
+		letter-spacing: 0.1em
+		text-transform: uppercase
+		max-width: 369px
+		height: 80px
+		width: 100%
+		box-shadow: 0px 3px 0px #0AA347, inset 0px 0px 150px 5px rgba(255, 255, 255, 0.47)
+		margin: 0 auto
+	&__gost
+		font-weight: 400
+		font-size: 18px
+		line-height: 140%
+		color: white
+		background: #4B4B4B
+		border-radius: 5px
+		max-width: 238px
+		height: 38px
+		width: 100%
+		margin: 0 auto
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-bottom: 30px
+.accordion
+	margin-top: 350px
+	display: flex
+	flex-direction: column
+	gap: 15px
+	margin-bottom: 60px
+	.accordion__tab
+		.tab-title
+			padding-left: 45px
+			height: 66px
+			display: flex
+			align-items: center
+			cursor: pointer
+			position: relative
+			font-weight: 400
+			font-size: 20px
+			line-height: 140%
+			border: 1px solid #F6F6F6
+			background: #F6F6F6
+			border-radius: 5px
+			&:hover
+				color: #55B353
+				border: 1px solid #55B353
+			&::after
+				content: '+'
+				font-weight: 600
+				font-size: 32px
+				line-height: 140%
+				color: white
+				background-repeat: no-repeat
+				background-position: center
+				position: absolute
+				right: 45px
+				width: 30px
+				height: 30px
+				display: flex
+				align-items: center
+				justify-content: center
+				background: #08B84E
+				box-shadow: inset 0px 0px 20px 5px rgba(255, 255, 255, 0.47)
+				border-radius: 100%
+		input
+			display: none
+		.accordion__content
+			display: none
+			flex-direction: column
+			gap: 10px
+			padding: 23px 28px
+			p
+				max-width: 1090px
+				width: 100%
+.accordion__tab input:checked ~ .accordion__content
+	display: flex
+.accordion__tab input:not(:checked) + .accordion__content
+	display: none
+.accordion__tab input:checked + .tab-title::after
+	content: '-'
+	background-repeat: no-repeat
+	background-position: 10px 8px
